@@ -39,8 +39,8 @@ def load_data(data_directory):
     return images, labels
 
 ROOT_PATH = ""
-train_data_directory = os.path.join(ROOT_PATH, "TrafficSigns/Training")
-test_data_directory = os.path.join(ROOT_PATH, "TrafficSigns/Testing")
+train_data_directory = os.path.join(ROOT_PATH, "../TrafficSigns/Training")
+test_data_directory = os.path.join(ROOT_PATH, "../TrafficSigns/Testing")
 
 images, labels = load_data(train_data_directory)
 images= np.array(images)
@@ -116,3 +116,4 @@ for i in range(len(traffic_signs)):
     
 # Show the plot
 plt.show()
+
